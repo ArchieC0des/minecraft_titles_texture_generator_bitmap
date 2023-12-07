@@ -26,7 +26,7 @@ pub struct InputDialog {
     window_icon: nwg::Icon,
 
     // Main window configuration
-    #[nwg_control(size: (300, 155), center: true, title: "Minecraft Titles [Texture Generator]", flags: "WINDOW|VISIBLE")]
+    #[nwg_control(size: (300, 175), center: true, title: "Minecraft Titles [Texture Generator]", flags: "WINDOW|VISIBLE")]
     #[nwg_events(OnWindowClose: [InputDialog::exit])]
     window: nwg::Window,
 
@@ -47,18 +47,27 @@ pub struct InputDialog {
     #[nwg_events(OnButtonClick: [InputDialog::exit])]
     button: nwg::Button,
 
+    #[nwg_control(size: (100, 25), position: (10, 130), text: "About")]
+    #[nwg_events(OnButtonClick: [InputDialog::about])]
+    about_button: nwg::Button,
+
     // Layout configuration for the window
     #[nwg_layout(parent: window, spacing: 1)]
     grid_layout: nwg::GridLayout,
 }
 
 impl InputDialog {
-    // Function to exit the application
     fn exit(&self) {
         nwg::stop_thread_dispatch();
     }
+
+    fn about(&self) {
+        nwg::simple_message("ⓘAbout", "Copyright 2023 Archie★\nVisit my GitHub: https://github.com/ghosthesia\nsource_code:\nhttps://github.com/ArchieC0des/minecraft_titles_texture_generator_bitmap");
+    }
 }
-const ICON_DATA: &[u8] = include_bytes!("./assets/Icon.ico");
+//load icon
+const ICON_DATA: &[u8] = include_bytes!("assets/icon.ico");
+
 fn main() -> Result<(), Box<dyn Error>> {
 
     // Initialize the GUI framework and set default font
