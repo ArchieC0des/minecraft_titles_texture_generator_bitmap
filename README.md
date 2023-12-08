@@ -1,7 +1,6 @@
 # **Minecraft Titles Texture Generator**
 ### Description
-Minecraft Titles Texture Generator is a Rust-based application designed to create texture maps (uv guides) for Minecraft titles. This tool allows users to input text and render it with specific font styles and configurations, ultimately outputting a texture map that can be used in the blender project.
-
+Minecraft Titles Texture Generator is a Rust-based application designed to create texture maps (uv guides) for Minecraft titles. This tool allows users to input text and render it with specific font styles and configurations, ultimately outputting a texture map that can be used in the blender project on https://ghosthesia.gumroad.com/l/MinecraftTitles
 ### Features
 - User-friendly interface for entering and rendering text.
 - Support for kerning adjustments in text rendering.
