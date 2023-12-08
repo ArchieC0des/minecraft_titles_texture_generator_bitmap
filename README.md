@@ -15,13 +15,11 @@ To install Minecraft Titles Texture Generator, follow these steps:
 git clone https://github.com/ghosthesia/minecraft-titles-texture-generator.git
 ```
 2. Navigate to the project directory:
-```
-bash
+```bash
 cd minecraft-titles-texture-generator
 ```
 3. Build the project using Cargo (Rust's package manager):
-```
-arduino
+```arduino
 cargo build --release
 ```
 ### Usage
