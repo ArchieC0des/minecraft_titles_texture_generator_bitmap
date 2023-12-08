@@ -330,17 +330,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "minecraft_titles_texture_generator"
-version = "0.1.1"
-dependencies = [
- "embed-resource",
- "image",
- "native-windows-derive",
- "native-windows-gui",
- "rust-embed",
-]
-
-[[package]]
 name = "miniz_oxide"
 version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -542,6 +531,17 @@ checksum = "873feff8cb7bf86fdf0a71bb21c95159f4e4a37dd7a4bd1855a940909b583ada"
 dependencies = [
  "sha2",
  "walkdir",
+]
+
+[[package]]
+name = "rust_bitmap_renderer"
+version = "0.1.1"
+dependencies = [
+ "embed-resource",
+ "image",
+ "native-windows-derive",
+ "native-windows-gui",
+ "rust-embed",
 ]
 
 [[package]]

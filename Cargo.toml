@@ -1,5 +1,5 @@
 [package]
-name = "minecraft_titles_texture_generator"
+name = "rust_bitmap_renderer"
 version = "0.1.1"
 authors = ["Archie★ <https://github.com/ArchieC0des/>"]
 edition = "2021"
